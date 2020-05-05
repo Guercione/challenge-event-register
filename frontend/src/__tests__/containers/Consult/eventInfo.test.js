@@ -34,8 +34,8 @@ describe("CONTAINER - Consult", () => {
     expect(checkString(data.name)).toBeTruthy();
     expect(checkString(data.lastName)).toBeTruthy();
     expect(checkString(data.email)).toBeTruthy();
-    expect(data.eventDate).toBeTruthy();
-    expect(data.eventCreatedDate).toBeTruthy();
+    expect(checkString(data.eventDate)).toBeTruthy();
+    expect(checkString(data.eventCreatedDate)).toBeTruthy();
 
     done();
   });
