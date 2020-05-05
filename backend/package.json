@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "start:nodemon": "nodemon src/server.js",
-    "test": "jest --forceExit"
+    "test": "jest --watchAll --forceExit"
   },
   "jest": {
     "testEnvironment": "node",
