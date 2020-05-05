@@ -1,4 +1,4 @@
-# CHALLENGE EVENT REGISTER - FRONTEND AND FRONTEND
+# Challenge Event Register - Backend and Frontend
 
 ## BACKEND
 
@@ -53,10 +53,4 @@ https://material-ui.com/
 - npm install / yarn
 - npm run start / yarn start
 - Access: http://localhost:3000
-
-## How to run
-
-- npm install / yarn
-- npm run start / yarn start
-- Endpoint: http://localhost:3333
 - Edit `REACT_APP_API_URL` on `.env` with the API URI
