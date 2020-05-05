@@ -1,5 +1,7 @@
 # Challenge Event Register - Backend and Frontend
 
+### Live demo: https://brainhub-frontend.herokuapp.com
+
 ## BACKEND
 
 ### Database: Mongodb
