@@ -1,9 +1,8 @@
 import { put, call } from "redux-saga/effects";
 import eventType from "redux/types/eventType";
+
 import { requestStatusCheck } from "utils/httpErrors";
-
 import notificationType from "redux/types/notificationType";
-
 import {
   getEventByHashApi,
   postEventApi,
@@ -33,6 +32,7 @@ export function* eventPostRequestSaga(data) {
         type: eventType.EVENT_REQUEST_SUCCESS,
         ...data.event,
         ...api.data,
+        createdAt: new Date(),
       });
 
       yield put({

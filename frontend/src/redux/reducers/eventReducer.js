@@ -1,4 +1,5 @@
 import Type from "redux/types/eventType";
+import moment from "moment";
 
 export const initialState = {
   loading: false,
@@ -34,8 +35,10 @@ export const event = (state = initialState, action) => {
         name: action?.name,
         lastName: action?.lastName,
         email: action?.email,
-        eventDate: action?.eventDate,
-        eventCreatedDate: action?.createdAt,
+        eventDate:
+          action?.eventDate && moment(action?.eventDate).format("MMM Do YYYY"),
+        eventCreatedDate:
+          action?.createdAt && moment(action?.createdAt).format("MMM Do YYYY"),
         eventHash: action?.eventHash,
       };
 

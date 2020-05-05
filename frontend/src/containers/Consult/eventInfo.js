@@ -1,5 +1,4 @@
 import React from "react";
-import moment from "moment";
 import PropTypes from "prop-types";
 
 import { connect } from "react-redux";
@@ -65,9 +64,7 @@ function EventInfo({
           >
             Event date:
           </Typography>
-          <Typography variant="body1">
-            {moment(eventDate).format("MMM Do YYYY")}
-          </Typography>
+          <Typography variant="body1">{eventDate}</Typography>
         </Grid>
         <Grid container alignItems="center">
           <Typography
@@ -77,9 +74,7 @@ function EventInfo({
           >
             Event created at:
           </Typography>
-          <Typography variant="body1">
-            {moment(eventCreatedDate).format("MMM Do YYYY")}
-          </Typography>
+          <Typography variant="body1">{eventCreatedDate}</Typography>
         </Grid>
       </CardContent>
       <CardActions>
