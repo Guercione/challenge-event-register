@@ -1,0 +1,226 @@
+{
+  "info": {
+    "_postman_id": "274f1a3a-81f7-47b6-8838-d76d6a24d34a",
+    "name": "Brainhub",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Event Localhost",
+      "item": [
+        {
+          "name": "Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"name\": \"Guilherme\",\n\t\"lastName\": \"Vecino\",\n\t\"email\": \"guilherme.vecino@gmail.com\",\n\t\"eventDate\": \"2020-05-22T15:10:48.550Z\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3333/event",
+              "host": ["localhost"],
+              "port": "3333",
+              "path": ["event"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Event by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3333/event/c3b291",
+              "host": ["localhost"],
+              "port": "3333",
+              "path": ["event", "c3b291"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3333/event",
+              "host": ["localhost"],
+              "port": "3333",
+              "path": ["event"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Event by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3333/event/c3b291",
+              "host": ["localhost"],
+              "port": "3333",
+              "path": ["event", "c3b291"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "0fe27f13-f930-462f-8236-65dd6555c16f",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "08447e6e-0326-4e9a-8d7b-bf29d52cd335",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "Event Heroku Server",
+      "item": [
+        {
+          "name": "Event by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://brainhub-backend.herokuapp.com/event/493d50",
+              "protocol": "http",
+              "host": ["brainhub-backend", "herokuapp", "com"],
+              "path": ["event", "493d50"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"name\": \"Guilherme\",\n\t\"lastName\": \"Vecino\",\n\t\"email\": \"guilherme.vecino@gmail.com\",\n\t\"eventDate\": \"2020-05-22T15:10:48.550Z\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://brainhub-backend.herokuapp.com/event",
+              "protocol": "http",
+              "host": ["brainhub-backend", "herokuapp", "com"],
+              "path": ["event"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://brainhub-backend.herokuapp.com/event",
+              "protocol": "http",
+              "host": ["brainhub-backend", "herokuapp", "com"],
+              "path": ["event"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Event by ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://brainhub-backend.herokuapp.com/event/f26944",
+              "protocol": "http",
+              "host": ["brainhub-backend", "herokuapp", "com"],
+              "path": ["event", "f26944"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
